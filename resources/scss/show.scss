@@ -1,0 +1,259 @@
+body {
+    position: relative;
+    .btn-message {
+        position: fixed;
+        bottom: 150px;
+        right: 25px;
+    }
+}
+
+.house-detail {
+    img {
+        border-radius: 10px;
+    }
+}
+
+.house-composition {
+    .card-title {
+        margin-bottom: 0;
+    }
+}
+
+.wrapper-composition-cards,
+.wrapper-house-services-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.house-composition .card,
+.house-services .card {
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.content-container {
+    .house-description,
+    .host-section,
+    .house-services,
+    .house-composition {
+        border-bottom: 1px solid lightgray;
+    }
+
+    .host-section {
+        border-top: 1px solid lightgray;
+        margin-top: 30px;
+    }
+
+    .house-description {
+        padding: 30px 0;
+    }
+}
+
+.form-reservation {
+    display: none;
+
+    margin-top: 20px;
+
+    .card {
+        max-width: 450px;
+        padding: 30px;
+
+        #detail_reservation {
+            min-height: 200px;
+        }
+    }
+}
+
+.price {
+    font-size: 1.3rem;
+}
+
+.reservation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+
+#map {
+    height: 450px;
+    width: 100%;
+}
+
+.offcanvas {
+    height: 100%;
+}
+.btn-custom {
+    padding: 6px 15px 0px;
+    border-radius: 30px;
+    color: #ffffff;
+    border: 0;
+    background-image: linear-gradient(to right, #97e15f, #22dd85);
+    text-decoration: none;
+
+    &:hover {
+        background-image: linear-gradient(to right, #4c4c4c, #191919);
+        color: white;
+    }
+}
+.offcanvas {
+    div {
+        border-radius: 25px;
+    }
+    .my-offcanvas-body {
+        padding: 10px;
+        border-radius: 23px;
+        background-image: linear-gradient(to right, #97e15f, #22dd85);
+    }
+}
+.p-50 {
+    padding-left: 25%;
+}
+
+.container-chart {
+    min-height: 500px;
+    #myChart {
+        height: 100%;
+    }
+}
+
+.sponsor {
+    .card {
+        // box-shadow: inset 0px 0px 100px -28px #24dd85;
+        box-shadow: 0px 0px 11px 0px #24dd85;
+    }
+
+    .card-title {
+        display: flex;
+
+        figure {
+            width: calc(100% / 3);
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .text-bronze {
+            color: #7f5330;
+        }
+        .text-silver {
+            color: #8a8b8f;
+        }
+        .text-gold {
+            color: #ecae23;
+        }
+
+        .text-bronze,
+        .text-silver,
+        .text-gold {
+            font-weight: 700;
+        }
+    }
+
+    .card-title-sponsor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .fa-solid.fa-medal {
+            margin-top: 20px;
+            font-size: 10rem;
+        }
+    }
+
+    .btn-sponsor {
+        height: 50px;
+
+        .btn-custom {
+            padding: 20px 90px;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+    }
+}
+.offcanvas {
+    width: 100% !important;
+}
+
+.gallery img {
+    height: 750px;
+    width: 100%;
+    object-fit: cover;
+    display: none;
+    border-radius: 10px;
+}
+
+.carousel {
+    position: relative;
+    #prev,
+    #next {
+        i {
+            color: white;
+            font-size: 3rem;
+        }
+        position: absolute;
+        height: 100%;
+        width: 120px;
+        background-color: rgba(0, 0, 0, 0.351);
+        visibility: hidden;
+        font-size: 2rem;
+        top: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .counter {
+        width: 100%;
+        position: absolute;
+        bottom: 20px;
+        display: flex;
+        justify-content: center;
+
+        .counter-text {
+            color: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, 0.37);
+        }
+    }
+}
+
+.carousel:hover #next,
+.carousel:hover #prev {
+    visibility: visible;
+    animation: fadeIn 1s;
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+}
+
+#prev {
+    left: 0px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+#next {
+    right: 0px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+@media (min-width: 960px) {
+    .offcanvas {
+        width: 50% !important;
+    }
+}
